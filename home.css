@@ -1,0 +1,832 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* SIDE BAR */
+body {
+  font-family: sans-serif;
+  background-image: url(latarhomesatu.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2000px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 15px;
+  left: 140px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: #79C69D;
+}
+
+.sidenav a,
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+  transition: 0.3s;
+  overflow-y: hidden;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.myself {
+
+  font-size: 40px;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 5px;
+  padding-bottom: 9px;
+  box-sizing: border-box;
+  background-color: black;
+  height: max-content;
+  background-size: cover;
+  filter: blur(8px);
+  float: none;
+  position: relative;
+  right: 100px;
+  top: -1px;
+}
+
+.aing {
+  font-family: 'Times New Roman';
+  color: white;
+  font-size: 35px;
+  float: left;
+  position: relative;
+  left: 20px;
+  cursor: pointer;
+}
+
+.aku img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  float: right;
+  border: black solid 2px;
+  margin-top: 20px;
+  margin-right: 7px;
+}
+
+
+h2 {
+  float: right;
+  font-size: 60px;
+  font-family: 'Times New Roman';
+  font-style: italic;
+  margin: auto;
+  padding-right: 100px;
+  margin-top: 20px;
+}
+
+hr {
+  float: right;
+  margin-top: 90px;
+  margin-right: -380px;
+  width: 30%;
+  border-width: 1px;
+  border-color: black;
+}
+
+.info li {
+  display: inline;
+  float: right;
+  position: relative;
+  left: 420px;
+  top: 110px;
+  font-family: cursive;
+  cursor: pointer;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #458ccd;
+  font-size: 21px;
+}
+
+.penjelasan {
+  float: right;
+  position: relative;
+  top: 130px;
+  left: 415px;
+  font-family: cursive;
+  font-style: italic;
+  padding-left: 10px;
+}
+
+.pendidikan h2 {
+  font-size: 40px;
+  float: left;
+  position: relative;
+  left: 260px;
+  top: 100px;
+}
+
+.listpendidikan ul {
+  font-family: cursive;
+  cursor: pointer;
+  font-size: 20px;
+  padding-bottom: 10px;
+  float: left;
+  position: relative;
+  top: 170px;
+  left: -160px;
+}
+
+.listpendidikan li {
+  padding-top: 5px;
+}
+
+.listpendidikan a {
+  text-decoration: none;
+}
+
+.profesional h2 {
+  font-size: 40px;
+  float: left;
+  position: relative;
+  left: 260px;
+  top: 50px;
+}
+
+.listprofesional li {
+  padding-top: 5px;
+}
+
+.listprofesional ul {
+  font-family: cursive;
+  cursor: pointer;
+  font-size: 20px;
+  padding-bottom: 10px;
+  float: left;
+  position: relative;
+  top: 150px;
+  right: 250px;
+}
+
+.listprofesional a {
+  text-decoration: none;
+}
+
+.aboutme {
+  float: left;
+  width: 100%;
+  height: 30px;
+  border-bottom: black solid 2px;
+  position: relative;
+  top: 167px;
+  background-color: #79C69D;
+  text-align: center;
+  font-family: cursive;
+  font-size: 25px;
+}
+
+.pengabdian h2 {
+  font-size: 40px;
+  float: left;
+  position: relative;
+  left: 260px;
+  top: 180px;
+}
+
+.listpengabdian ul {
+  font-family: cursive;
+  cursor: pointer;
+  font-size: 20px;
+  padding-top: 10px;
+  float: left;
+  position: relative;
+  top: 265px;
+  right: 245px;
+}
+
+.listpengabdian li {
+  padding-top: 5px;
+}
+
+.listpengabdian a {
+  text-decoration: none;
+}
+
+#tengah {
+
+  width: 100%;
+  float: left;
+  position: relative;
+  top: 170px;
+}
+
+.tengah {
+  float: left;
+  width: 100%;
+  height: 30px;
+  border-bottom: black solid 2px;
+  text-decoration: wavy;
+  position: absolute;
+  top: 1301px;
+  background-color: #79C69D;
+  text-align: center;
+  font-family: cursive;
+  font-size: 25px;
+}
+
+/* DROP DOWN BUAT DATADIRI */
+.dropbtn {
+  background-color: #79C69D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  position: relative;
+  left: 220px;
+  border: black solid 1px;
+  border-radius: 50%;
+}
+
+.dropdown {
+  float: left;
+  margin-top: 200px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-style: italic;
+  font-family: cursive;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 220px;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 70%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  float: left;
+  position: relative;
+  top: 350px;
+  text-align: center;
+  margin-left: 15%;
+  font-family: cursive;
+  color: black;
+  font-style: italic;
+  border-style: groove
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+  background-color: #79C69D;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+  float: left;
+  position: relative;
+  top: 350px;
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-family: cursive;
+  padding-bottom: 3px;
+}
+
+.columnsatu {
+  float: left;
+  position: absolute;
+  top: 1340px;
+  width: 15%;
+  height: 200px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 40px;
+  right: 900px;
+  display: inline;
+}
+
+.columndua {
+  float: left;
+  position: absolute;
+  top: 1340px;
+  width: 15%;
+  height: 200px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 40px;
+  right: 550px;
+  display: inline;
+}
+
+.columntiga {
+  float: left;
+  position: absolute;
+  top: 1340px;
+  width: 15%;
+  height: 200px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 40px;
+  right: 200px;
+  display: inline;
+}
+
+
+
+.footer {
+  margin-top: 1673px;
+}
+
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+
+  padding: 16px;
+  color: #79C69D;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: white;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #79C69D;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #458ccd;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
+}
+
+.quotes {
+  font-family: cursive;
+
+}
+
+/* STYLE IMAGE */
+
+#myImgg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImgg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modall {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modall-content {
+  margin: auto;
+  display: block;
+  width: 300px;
+
+  padding-right: 100px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#captionn {
+  margin-left: 270px;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modall-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* The Close Button */
+.closee {
+  position: absolute;
+  top: 60px;
+  right: 550px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.closee:hover,
+.closee:focus {
+  color: #458ccd;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modall-content {
+    width: 100%;
+  }
+}
+
+.image:hover .columnsatu {
+  opacity: 0.5;
+}
+
+.overlay {
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 10px;
+  right: 0;
+  height: 335px;
+  width: 202px;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #458ccd;
+}
+
+.columnsatu:hover .overlay {
+  opacity: 0.5;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-heart:hover {
+  color: white;
+}
+
+/* FOTO KETIGA */
+
+
+.imagee:hover .columntiga {
+  opacity: 1;
+}
+
+.overlayy {
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 10px;
+  right: 0;
+  height: 340px;
+  width: 202px;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #458ccd;
+}
+
+.columntiga:hover .overlayy {
+  opacity: 0.5;
+}
+
+.iconn {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-heart:hover {
+  color: white;
+}
